@@ -10,5 +10,6 @@ urlpatterns = [
     path('student/<int:pk>/',views.StudentDetailedView),
     # path('employees/',views.Employees.as_view()),
     # path('employee/<int:pk>/',views.EmployeeDetail.as_view()),
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('',include('blog.urls'))
 ]
